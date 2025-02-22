@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 :root{
     --black-bgc: #1B1B1B;
     --liter-font: "Liter", serif;
@@ -8,6 +9,7 @@
 
 body{
     font-family: var(--liter-font);
+font-family: "IBM Plex Sans", serif;
     font-size: 16px;
     color: #000;
     font-weight: 400;
