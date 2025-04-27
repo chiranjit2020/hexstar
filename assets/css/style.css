@@ -772,6 +772,7 @@ header .right-login-btn-block .instructor-btn{
 .explore-cubesat-cits-section .heading-section p{
     color: var(--white-color);
     text-align: left;
+    margin: 0 0 20px 0;
 }
 
 .explore-cubesat-cits-section .bottom-content-block .left-block{
@@ -885,19 +886,19 @@ header .right-login-btn-block .instructor-btn{
 .community-section .top-part .heading-section {
     text-align: left;
     margin: 0;
-    width: 40%;
 }
 .community-section .top-part .heading-section h3{
     color: var(--white-color);
 }
 
 .community-section .top-part .heading-section p{
-    font-size: 22px;
+    font-size: 16px;
     color: var(--white-color);
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
-    padding-bottom: 14px;
-    margin: 0;
+    line-height: 1.5;
+    padding-bottom: 0;
+    margin: 0 0 20px 0;
 }
 
 .community-section .top-part .heading-section span{
