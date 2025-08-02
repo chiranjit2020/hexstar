@@ -17,6 +17,7 @@ body {
     background-color: var(--black-bgc);
     padding: 0;
     margin: 0;
+    scroll-margin-top: 80px;
 }
 
 a {
