@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1419px){
     .all-programs-section .bottom-content-section .heading-section p {
-        width: 35%;
+        width: 70%;
     }
 }
 
@@ -98,6 +98,9 @@
         width: 39px;
         height: 16px;
     }
+    .all-programs-section .bottom-content-section .card-section .card{
+        min-height: 446px;
+    }
 }
 
 @media only screen and (max-width: 1036px){
@@ -180,9 +183,9 @@
         height: 53%;
     }
 
-    .community-section .top-part .heading-section {
+    /* .community-section .top-part .heading-section {
         width: 50%;
-    }
+    } */
 
     .community-section .bottom-content .left-block .top-video-block {
         width: 95%;
@@ -327,6 +330,13 @@
     .all-programs-section .top-counter-section .content-wrapper h6 {
         font-size: 22px;
     }
+    footer .right-logo-block .form{
+        flex-direction: column;
+        align-items: end;
+    }
+    footer .right-logo-block .form input{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 656px){
@@ -354,6 +364,7 @@
         text-align: center;
         margin-top: 30px;
     }
+    
 }
 
 @media only screen and (max-width: 576px){
@@ -458,16 +469,27 @@
     .why-hexStar-section .right-block img {
         width: 75%;
     }
+    footer .right-logo-block .form{
+        flex-direction: row;
+    }
+    footer .right-logo-block .form input{
+        width: 60%;
+    }
+    footer .right-logo-block .form a {
+        font-size: 14px;
+        padding: 5px 13px;
+    }
+
 }
 
 @media only screen and (max-width: 480px){
-    .learn-from-industry-section .bottom-content .content-wrapper {
+    /* .learn-from-industry-section .bottom-content .content-wrapper {
         margin-right: 0;
-    }
+    } */
 
-    .listen-to-your-section .slider-heading-block .slider .content-wrapper {
+    /* .listen-to-your-section .slider-heading-block .slider .content-wrapper {
         margin-right: 0;
-    }
+    } */
 
     .learn-from-industry-section .bottom-content .content-wrapper .img-block {
         --w-h: 100px;
