@@ -262,6 +262,7 @@ header .right-login-btn-block ul li:nth-child(2) a i {
 }
 
 header .right-login-btn-block .instructor-btn {
+    position: relative;
     font-family: inherit;
     font-size: 16px;
     color: var(--white-color);
@@ -270,7 +271,27 @@ header .right-login-btn-block .instructor-btn {
     background-color: var(--primary-color);
     border-radius: 7px;
     padding: 8px 20px;
+    overflow: hidden;
 }
+
+header .right-login-btn-block .instructor-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 100px;
+    background-color: rgba(255,255,255,0.3);
+    animation: shiny 2s ease-in-out infinite forwards;
+}
+
+@keyframes shiny {
+    0%{ left: -100%; opacity: 1; }
+    100%{ left: 100%; opacity: 0; }
+}
+
+
 
 /* Header End */
 
