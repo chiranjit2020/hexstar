@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,11 +77,12 @@
             <div class="search-ai">
                 <div class="header">
                     <h1>SIDHU – AI-Powered <br> Knowledge Engine</h1>
-                    <p>Explore the universe of scientific, defense, aerospace, <br>and emerging tech knowledge with AI.</p>
+                    <p>Explore the universe of scientific, defense, aerospace, <br>and emerging tech knowledge with AI.
+                    </p>
                 </div>
                 <!-- search bar -->
                 <div class="search-bar">
-                    <p><span id="element">Ask about space, defense tech, AI image generators...</span></p>
+                    <p>Ask about <span id="element"></span></p>
                     <button class="button" role="button">
                         <i class="bi bi-send-fill"></i>
                     </button>
@@ -91,7 +91,8 @@
 
             <div class="how-sidhu-works">
                 <h1>How SIDHU Works</h1>
-                <p>SIDHU uses a state-of-the-art semantic search engine powered by deep <br>AI. It understands context and
+                <p>SIDHU uses a state-of-the-art semantic search engine powered by deep <br>AI. It understands context
+                    and
                     meaning to give you research-ready results instantly.</p>
                 <div class="cards">
                     <div class="row g-3 w-75  mx-auto justify-content-center">
@@ -238,13 +239,24 @@
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
 
-      <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Ask about ', 'space', 'defense tech', 'AI image generators'],
-      typeSpeed: 50,
-    });
-  </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['space', 'defense tech', 'AI image generators'],
+            typeSpeed: 60,
+            backSpeed: 30,
+            backDelay: 1200,
+            startDelay: 500,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: true,
+            cursorChar: '|',
+            smartBackspace: true,
+            shuffle: false,
+            fadeOut: true,
+            fadeOutDelay: 500
+        });
+    </script>
 
 </body>
 
