@@ -133,41 +133,41 @@ header .right-login-btn-block .instructor-btn {
 
 /* Header End */
 
-    .ball {
-      position: absolute;
-      width: 170px;
-      height: 170px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, 
-        rgba(255, 50, 50, 0.8) 0%, 
-        rgba(255, 50, 50, 0.4) 50%, 
-        rgba(255, 50, 50, 0) 100%);
-      filter: blur(50px);
-      animation: float 10s ease-in-out infinite;
-    }
+.ball {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgb(255 50 50 / 60%) 0%, rgb(255 50 50 / 15%) 50%, rgba(255, 50, 50, 0) 100%);
+    filter: blur(50px);
+    animation: float 10s ease-in-out infinite;
+}
 
-    .ball:nth-child(1) {
-      top: 30%;
-      left: 16%;
-      animation-delay: 0s;
-    }
+.ball:nth-child(1) {
+    top: 30%;
+    left: 16%;
+    animation-delay: 0s;
+}
 
-    .ball:nth-child(2) {
-      top: 54%;
-      left: 80%;
-      animation-delay: 2s;
-    }
+.ball:nth-child(2) {
+    top: 54%;
+    left: 80%;
+    animation-delay: 2s;
+}
 
-    @keyframes float {
-      0%, 100% {
+@keyframes float {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
         opacity: 0.8;
-      }
-      50% {
+    }
+
+    50% {
         transform: translate(50px, -50px) scale(1.2);
         opacity: 1;
-      }
     }
+}
 
 
 /* sidhu-search start */
@@ -179,6 +179,7 @@ header .right-login-btn-block .instructor-btn {
     position: relative;
     z-index: 1;
 }
+
 /* .sidhu-search::after{
     content: "";
     position: absolute;
@@ -192,29 +193,32 @@ header .right-login-btn-block .instructor-btn {
     z-index: -1;
 } */
 
-.sidhu-search .search-ai{
+.sidhu-search .search-ai {
     height: 60vh;
 }
-.sidhu-search .search-ai .header h1{
+
+.sidhu-search .search-ai .header h1 {
     font-family: inherit;
     font-size: clamp(2.1875rem, 1.7046rem + 2.0067vw, 4.0625rem);
     font-weight: 800;
-    background: -webkit-linear-gradient(270deg,rgba(255, 255, 255, 1) 0%, rgba(199, 199, 199, 1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(199, 199, 199, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 45px;
 }
-.sidhu-search .search-ai .header p{
-  font-size: 16px;
-  font-family: inherit;
-  color: rgb(255, 255, 255);
-  line-height: 1.9;
-  text-align: center;
-  margin: 0 auto 90px;
+
+.sidhu-search .search-ai .header p {
+    font-size: 16px;
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    line-height: 1.9;
+    text-align: center;
+    margin: 0 auto 90px;
 }
-.sidhu-search .search-bar{
+
+.sidhu-search .search-bar {
     height: clamp(2.8125rem, 2.6515rem + 0.6689vw, 3.4375rem);
     width: clamp(18.75rem, 13.9214rem + 20.0669vw, 37.5rem);
     border: 1px solid var(--primary-color);
@@ -227,14 +231,16 @@ header .right-login-btn-block .instructor-btn {
     align-items: center;
     justify-content: space-between;
 }
-.sidhu-search .search-bar p{
+
+.sidhu-search .search-bar p {
     font-family: inherit;
     font-size: 15px;
     font-weight: normal;
     color: #fff;
     opacity: 90%;
 }
-.sidhu-search .search-bar .button{
+
+.sidhu-search .search-bar .button {
     all: unset;
     width: 80px;
     height: 40px;
@@ -246,10 +252,12 @@ header .right-login-btn-block .instructor-btn {
     align-items: center;
     justify-content: center;
 }
-.sidhu-search .how-sidhu-works{
+
+.sidhu-search .how-sidhu-works {
     padding: 120px 0 0 0;
 }
-.sidhu-search .how-sidhu-works h1{
+
+.sidhu-search .how-sidhu-works h1 {
     font-size: clamp(1.875rem, 1.5048rem + 1.5385vw, 3.3125rem);
     font-weight: bold;
     font-family: inherit;
@@ -258,7 +266,8 @@ header .right-login-btn-block .instructor-btn {
     text-align: center;
     position: relative;
 }
-.sidhu-search .how-sidhu-works h1::after{
+
+.sidhu-search .how-sidhu-works h1::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -268,7 +277,8 @@ header .right-login-btn-block .instructor-btn {
     height: 3px;
     background-color: #c20b21;
 }
-.sidhu-search .how-sidhu-works p{
+
+.sidhu-search .how-sidhu-works p {
     font-size: clamp(1rem, 0.9678rem + 0.1338vw, 1.125rem);
     font-family: inherit;
     font-weight: normal;
@@ -277,7 +287,8 @@ header .right-login-btn-block .instructor-btn {
     text-align: center;
     padding: 40px 0 75px 0;
 }
-.sidhu-search .how-sidhu-works .cards .workscard{
+
+.sidhu-search .how-sidhu-works .cards .workscard {
     max-width: 224px;
     height: 115px;
     border-radius: 15px;
@@ -293,11 +304,13 @@ header .right-login-btn-block .instructor-btn {
     justify-content: space-between;
     align-items: center;
 }
-.sidhu-search .how-sidhu-works .cards .workscard p{
+
+.sidhu-search .how-sidhu-works .cards .workscard p {
     font-size: 18px;
     line-height: 1.2;
     padding: 0;
 }
+
 /* sidhu-search end */
 
 
