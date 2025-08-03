@@ -545,6 +545,22 @@
 }
 
 @media only screen and (max-width: 450px){
+    .sidhu-search .search-ai .header p {
+        margin: 0 auto 49px;
+    }
+    .sidhu-search .search-ai .header p > br{
+        display: none;
+    }
+
+    .sidhu-search .search-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidhu-search .search-bar .button {
+        padding: 9px;
+    }
+
     .why-hexStar-section .left-block img {
         width: 26%;
         top: 71px;
