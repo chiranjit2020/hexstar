@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="./assets/css/sidhuAI.css?ver=1.0.1">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 </head>
 
 <body>
@@ -80,7 +82,7 @@
                 </div>
                 <!-- search bar -->
                 <div class="search-bar">
-                    <p>Ask about space, defense tech, AI image generators...</p>
+                    <p><span id="element">Ask about space, defense tech, AI image generators...</span></p>
                     <button class="button" role="button">
                         <i class="bi bi-send-fill"></i>
                     </button>
@@ -235,6 +237,14 @@
 
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
+
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Ask about ', 'space', 'defense tech', 'AI image generators'],
+      typeSpeed: 50,
+    });
+  </script>
 
 </body>
 
