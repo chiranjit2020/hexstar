@@ -10,6 +10,13 @@
     --primary-font-color: rgb(20, 20, 20);
 }
 
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: thin;
+}
+
 body {
     font-family: var(--primary-font);
     font-size: 16px;
