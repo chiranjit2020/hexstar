@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
     --black-bgc: #1B1B1B;
     --primary-font: "Bricolage Grotesque", sans-serif;
+    --primary-font: "Plus Jakarta Sans", sans-serif;
     --white-color: #fff;
     --primary-color: #dc3545;
     --primary-font-color: rgb(20, 20, 20);
