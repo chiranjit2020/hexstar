@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +19,15 @@
 
     <!-- Box-Icon CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <!-- Slick-Slider-CDN -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- Fancybox CSS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <!-- AOS CDN -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- StellarNav CSS  -->
     <link rel="stylesheet" href="./assets/css/stellarnav.min.css">
@@ -36,16 +37,17 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
+
 <body>
 
-
     <!-- Header Start -->
-     <header>
+    <header>
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="logo-nav-block">
                     <div class="logo-block">
-                        <a href="index.html"><img src="./assets/images/logo.png" alt="Agnirath Logo" class="img-fluid" /></a>
+                        <a href="index.html"><img src="./assets/images/logo.png" alt="Agnirath Logo"
+                                class="img-fluid" /></a>
                     </div>
                     <div class="nav-block">
                         <nav class="stellarnav">
@@ -62,86 +64,59 @@
                     </div>
                 </div>
                 <div class="right-login-btn-block">
-                    <!-- <ul>
-                        <li><a href="#">login</a></li>
-                        <li><a href="#"><i class="bi bi-cart3"></i></a></li>
-                    </ul> -->
-                    <a href="#" class="instructor-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply for Internship</a>
+                    <a href="./internship.html" class="instructor-btn">Apply for Internship</a>
                 </div>
             </div>
         </div>
-     </header>
+    </header>
     <!-- Header Start -->
 
-    <!-- Banner Section Start -->
-     <section class="banner-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-8">
-                    <div class="left-content text-center">
-                        <h1>Apply for Internship</h1>
-                        <p>At Agnirath Aerospace and Defence Research Private Limited, we offer exciting internship opportunities for college students who are passionate about space technology, robotics, AI, and engineering.</p>
 
-                            <p>We provide students the chance to work with real-life space technologies, such as satellites, rovers, drones, and advanced aerospace systems. Our interns collaborate directly with our professional engineers and researchers, gaining hands-on experience and learning how real-world projects are developed and executed.</p>
-                            
-                            <p>This opportunity not only enhances technical skills but also boosts career prospects by offering exposure to actual industry practices. Interns can also showcase their projects in our company’s seminars and workshops, building their confidence and professional network.</p>
-                            
-                            <p>If you are a college student and want to work on real space technologies, apply now and be a part of the future of space exploration!</p>
+    <!-- School Course Section Start -->
+    <section class="school-course-section" id="school">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-block">
+                        <img src="./assets/images/school.jpg" alt="School" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-block">
+                        <h2>AI and Robotics Classes for Schools</h2>
+                        <p>At Agnirath Aerospace and Defence Research Private Limited, we bring real-world space
+                            technology experience directly into classrooms. We conduct specialized AI and Robotics
+                            classes in various schools across West Bengal, led by instructors who are professional
+                            engineers and developers working on real projects like satellites, rovers, drones, and other
+                            space technologies.</p>
+
+                        <p>Our team doesn't just teach theory — they share practical, real-life knowledge gained from
+                            designing and developing advanced technologies. This makes our instructors the perfect
+                            mentors for young students, inspiring them to think like true innovators.</p>
+
+                        <p>We also provide students with a unique platform to showcase their projects through our
+                            company workshops and seminars. This not only builds their technical skills but also boosts
+                            their confidence by giving them real exposure to the world of space research and robotics.
+                        </p>
+
+                        <p>Choosing Agnirath Aerospace means giving your students access to genuine industry expertise.
+                            Our program is affordable, but the knowledge, experience, and inspiration we deliver are
+                            truly limitless.</p>
+
+                        <p>Partner with us and help your students build the skills that will shape the future.</p>
+                        <p>Course Fees is <strong>Rs. 200/month per student</strong>. Started with <em>Minimum 200
+                                Students (Class 6 to 12)</em></p>
+                        <a href="./internship.html" class="btn btn-danger">Join Our Class</a>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
-    <!-- Banner Section End -->
+    </section>
+    <!-- School Course Section End -->
 
-    <!-- Modal -->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="modal-content p-4"> 
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5 mb-4 text-center" id="exampleModalLabel">Apply for Internship</h1>
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                    </div>
-                    <div class="modal-body">
-                        <form action="" autocomplete="off">
-                            <div class="mb-3">
-                                <label for="">First Name*</label>
-                                <input type="text" placeholder="First Name" class="form-control" required autofocus/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="">Last Name*</label>
-                                <input type="text" placeholder="Last Name" class="form-control" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="">Email*</label>
-                                <input type="email" placeholder="Email" class="form-control" required />
-                            </div> 
-                            <div class="mb-3">
-                                <label for="">Phone*</label>
-                                <input type="tel" placeholder="Phone" class="form-control" required />
-                            </div>                     
-                            <div class="mb-3">
-                                <label for="">Institute Name*</label>
-                                <input type="text" placeholder="Institute Name" class="form-control" required />
-                            </div>                     
-                            <div class="mb-3">
-                                <label for="">Message*</label>
-                                <textarea name="" placeholder="Message" class="form-control"></textarea>
-                            </div>  
-                            <div class="mb-3">
-                                <input type="submit" value="Submit" class="btn btn-danger w-100" required />
-                            </div>                                        
-                        </form>
-                    </div>
-                </div>                
-            </div>
-
-        </div>
-    </div>
 
     <!-- Footer Start -->
-     <footer>
+    <footer>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-sm-0 mb-4">
@@ -214,13 +189,13 @@
                 </div>
             </div>
             <div class="copy-right-block">
-                <span>© 2025 Hex-Star Universe | Website developed & designed by CK</span>
+                <span>© 2025 Agnirath</span>
             </div>
         </div>
-     </footer>
+    </footer>
     <!-- Footer End -->
 
-    
+
 
 
     <!-- Bootstrap JS CDN -->
@@ -233,7 +208,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 
     <!-- Slick-Slider-JS -->
-    <script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Fancybox JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -243,9 +218,10 @@
 
     <!-- StellarNav JS  -->
     <script src="assets/js/stellarnav.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
 
 </body>
+
 </html>

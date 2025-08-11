@@ -1,10 +1,10 @@
-@media only screen and (max-width: 1419px){
+@media only screen and (max-width: 1419px) {
     .all-programs-section .bottom-content-section .heading-section p {
         width: 70%;
     }
 }
 
-@media only screen and (max-width: 1230px){
+@media only screen and (max-width: 1230px) {
 
     .banner-section .left-content h1 span {
         display: inline-block;
@@ -26,7 +26,7 @@
         padding: 13px 10px;
     }
 
-    header .stellarnav .menu-toggle span.bars{
+    header .stellarnav .menu-toggle span.bars {
         margin: 0;
     }
 
@@ -45,15 +45,15 @@
         max-width: 185px;
     }
 
-    header .logo-nav-block .nav-block ul li{
+    header .logo-nav-block .nav-block ul li {
         border-bottom: 1px solid #fff;
     }
 
-    header .logo-nav-block .nav-block ul li:nth-last-child(1){
+    header .logo-nav-block .nav-block ul li:nth-last-child(1) {
         border: inherit;
     }
 
-    header .logo-nav-block .nav-block ul li a{
+    header .logo-nav-block .nav-block ul li a {
         width: max-content;
     }
 
@@ -98,12 +98,13 @@
         width: 39px;
         height: 16px;
     }
-    .all-programs-section .bottom-content-section .card-section .card{
+
+    .all-programs-section .bottom-content-section .card-section .card {
         min-height: 446px;
     }
 }
 
-@media only screen and (max-width: 1036px){
+@media only screen and (max-width: 1036px) {
     .banner-section .left-content h1 {
         font-size: clamp(2.3125rem, 2.0463rem + 1.4198vw, 3.75rem);
     }
@@ -131,8 +132,8 @@
     }
 }
 
-@media only screen and (max-width: 991px){
-    .heading-section h3{
+@media only screen and (max-width: 991px) {
+    .heading-section h3 {
         font-size: clamp(1.875rem, 1.3866rem + 2.6049vw, 3rem);
     }
 
@@ -197,11 +198,12 @@
     }
 
     .community-section .bottom-content .right-block .top-card .card .top h6 {
-       font-size: 17px;
+        font-size: 17px;
     }
 
     .community-section .bottom-content .right-block .top-card .card {
-        padding: 15px 15px 15px 15px;;
+        padding: 15px 15px 15px 15px;
+        ;
     }
 
     .community-section .bottom-content .right-block .top-card .card .top img {
@@ -212,7 +214,7 @@
         padding: 40px 14px 10px 14px;
     }
 
-    .community-section .bottom-content .left-block .bottom-conten{
+    .community-section .bottom-content .left-block .bottom-conten {
         text-align: center;
     }
 
@@ -256,11 +258,11 @@
     }
 
     footer .copy-right-block {
-       padding-top: 38px;
+        padding-top: 38px;
     }
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 980px) {
     .banner-section .right-img-block img {
         width: 100%;
     }
@@ -280,14 +282,18 @@
     .learn-from-industry-section {
         padding-bottom: 30px;
     }
+
+    .sidhu-search .search-ai {
+        height: 50vh;
+    }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     .top-announcement-section marquee span {
         font-size: 13px;
     }
 
-    .top-announcement-section marquee span i{
+    .top-announcement-section marquee span i {
         font-size: 17px;
     }
 
@@ -330,16 +336,18 @@
     .all-programs-section .top-counter-section .content-wrapper h6 {
         font-size: 22px;
     }
-    footer .right-logo-block .form{
+
+    footer .right-logo-block .form {
         flex-direction: column;
         align-items: end;
     }
-    footer .right-logo-block .form input{
+
+    footer .right-logo-block .form input {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 656px){
+@media only screen and (max-width: 656px) {
     .community-section .top-part .heading-section {
         width: 85%;
     }
@@ -364,10 +372,10 @@
         text-align: center;
         margin-top: 30px;
     }
-    
+
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
     header .d-flex {
         flex-wrap: wrap;
     }
@@ -384,7 +392,7 @@
         max-width: 155px;
     }
 
-    header .logo-nav-block .nav-block{
+    header .logo-nav-block .nav-block {
         order: 2;
     }
 
@@ -403,6 +411,10 @@
 
     header .right-login-btn-block .instructor-btn {
         font-size: 14px;
+    }
+
+    .how-sidhu-works p>br {
+        display: none;
     }
 
     .banner-section {
@@ -469,12 +481,15 @@
     .why-hexStar-section .right-block img {
         width: 75%;
     }
-    footer .right-logo-block .form{
+
+    footer .right-logo-block .form {
         flex-direction: row;
     }
-    footer .right-logo-block .form input{
+
+    footer .right-logo-block .form input {
         width: 60%;
     }
+
     footer .right-logo-block .form a {
         font-size: 14px;
         padding: 5px 13px;
@@ -482,7 +497,7 @@
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
     /* .learn-from-industry-section .bottom-content .content-wrapper {
         margin-right: 0;
     } */
@@ -542,19 +557,36 @@
         border: 3px solid var(--primary-color);
         border-radius: 20px;
     }
+
+    .magazine-section .magazine-wrapper .magazines .slider button {
+        font-size: 30px;
+    }
+
+    .magazine-section .magazine-wrapper .magazines .slider .slick-next {
+        right: -40px;
+    }
+
+    .magazine-section .magazine-wrapper .magazines .slider .slick-prev {
+        left: -40px;
+    }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     .sidhu-search .search-ai .header p {
         margin: 0 auto 49px;
     }
-    .sidhu-search .search-ai .header p > br{
+
+    .sidhu-search .search-ai .header p>br {
         display: none;
     }
 
     .sidhu-search .search-bar {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
+    }
+
+    .sidhu-search .search-bar p {
+        padding: 12px 0 0 0;
     }
 
     .sidhu-search .search-bar .button {
@@ -582,12 +614,12 @@
         width: 100%;
     }
 
-    .community-section .top-part .heading-section p{
+    .community-section .top-part .heading-section p {
         font-size: 18px;
         text-align: left;
     }
 
-    .community-section .top-part .button-block{
+    .community-section .top-part .button-block {
         width: 100%;
     }
 
@@ -602,7 +634,7 @@
         margin-top: 0;
         margin: 0;
     }
-    
+
     .community-section .top-part .button-block ul li:nth-child(2) {
         width: inherit;
         text-align: inherit;
@@ -621,9 +653,13 @@
         font-size: 11px;
     }
 
+    .magazine-section .magazine-wrapper .heading-section h3 br {
+        display: none;
+    }
+
 }
 
-@media only screen and (max-width: 385px){
+@media only screen and (max-width: 385px) {
     .banner-section .right-img-block img {
         width: 80%;
     }

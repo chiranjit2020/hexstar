@@ -5,7 +5,9 @@
     --primary-font: "Bricolage Grotesque", sans-serif;
     --white-color: #fff;
     --primary-color: #dc3545;
+    --primary-gradient-color: rgba(255, 45, 45, 0.18);
     --primary-font-color: rgb(20, 20, 20);
+    --background-gradient: rgb(14 14 14), rgb(18 18 18);
 }
 
 body {
@@ -133,7 +135,7 @@ header .right-login-btn-block .instructor-btn {
 
 /* Header End */
 
-.ball {
+/* .ball {
     position: absolute;
     width: 170px;
     height: 170px;
@@ -153,45 +155,31 @@ header .right-login-btn-block .instructor-btn {
     top: 54%;
     left: 80%;
     animation-delay: 2s;
-}
+} */
 
-@keyframes float {
 
-    0%,
-    100% {
-        transform: translate(0, 0) scale(1);
-        opacity: 0.8;
-    }
-
-    50% {
-        transform: translate(50px, -50px) scale(1.2);
-        opacity: 1;
-    }
-}
 
 
 /* sidhu-search start */
 
 .sidhu-search {
-    background: linear-gradient(128deg, rgb(14 14 14) 0%, rgb(18 18 18) 100%);
+    background: linear-gradient(128deg, var(--background-gradient));
     padding: 100px 0;
-    isolation: isolate;
     position: relative;
+    overflow: hidden;
     z-index: 1;
 }
-
-/* .sidhu-search::after{
+.sidhu-search::after{
     content: "";
+    inset: 0;
     position: absolute;
-    top: -50px;
-    height: 100%;
-    width: 100%;
-    background: url('/assets/images/backgound-gradiant.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 15%;
+    background: 
+    radial-gradient(circle at 20% 20%, var(--primary-gradient-color) 0%, rgba(255, 50, 50, 0) 20%),
+    radial-gradient(circle at 80% 55%, var(--primary-gradient-color) 0%, rgba(255, 50, 50, 0) 25%);
+    transition: background-image 0.5s ease-in-out;
+    animation: float 10s ease-in-out infinite;
     z-index: -1;
-} */
+}
 
 .sidhu-search .search-ai {
     height: 60vh;
@@ -203,6 +191,7 @@ header .right-login-btn-block .instructor-btn {
     font-weight: 800;
     background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(199, 199, 199, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
     text-align: center;
@@ -312,8 +301,6 @@ header .right-login-btn-block .instructor-btn {
 }
 
 /* sidhu-search end */
-
-
 
 
 
@@ -452,3 +439,18 @@ footer .copy-right-block span {
 
 
 /* Footer End */
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translate(0 ,50px) scale(1.2); 
+        opacity: 1;
+    }
+}

@@ -20,6 +20,12 @@
     <!-- Box-Icon CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Slick-Slider-CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Fancybox CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -27,16 +33,14 @@
     <link rel="stylesheet" href="./assets/css/stellarnav.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/sidhuAI.css?ver=1.0.1">
+    <link rel="stylesheet" href="./assets/css/style.css?ver=1.0.1">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-
-    
 
 </head>
 
 <body>
 
-    
+
 
     <!-- Header Start -->
     <header>
@@ -44,7 +48,8 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="logo-nav-block">
                     <div class="logo-block">
-                        <a href="index.html"><img src="./assets/images/logo.png" alt="Agnirath Logo" class="img-fluid" /></a>
+                        <a href="index.html"><img src="./assets/images/logo.png" alt="Agnirath Logo"
+                                class="img-fluid" /></a>
                     </div>
                     <div class="nav-block">
                         <nav class="stellarnav">
@@ -61,71 +66,138 @@
                     </div>
                 </div>
                 <div class="right-login-btn-block">
-                    <a href="internship.html" class="instructor-btn">Apply for Internship</a>
+                    <a href="./internship.html" class="instructor-btn">Apply for Internship</a>
                 </div>
             </div>
         </div>
     </header>
     <!-- Header Start -->
 
-
-    <!-- sidhu search section start -->
-    <section class="sidhu-search">
+    <!-- Advanced Research & Development-->
+    <section class="research-section section">
         <div class="container-fluid">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="search-ai">
-                <div class="header">
-                    <h1>SIDHU – AI-Powered <br> Knowledge Engine</h1>
-                    <p>Explore the universe of scientific, defense, aerospace, <br>and emerging tech knowledge with AI.
-                    </p>
-                </div>
-                <!-- search bar -->
-                <div class="search-bar">
-                    <p>Ask about <span id="element"></span></p>
-                    <button class="button" role="button">
-                        <i class="bi bi-send-fill text-white"></i>
-                    </button>
-                </div>
+            <div class="heading-section">
+                <h3>Advanced Research & Development</h3>
+                <p>Agnirath’s R&D division pioneers innovations in aerospace systems,
+                    quantum technologies, and AI-powered
+                    solutions.
+                    Our interdisciplinary teams collaborate globally to shape the future of defense, space exploration,
+                    and intelligent systems.
+                </p>
+                <p>At Agnirath Aerospace, our mission is to empower students, researchers, and enthusiasts with a profound understanding of space science, technology, and astronomy.</p>
             </div>
+        </div>
+    </section>
 
-            <div class="how-sidhu-works">
-                <h1>How SIDHU Works</h1>
-                <p>SIDHU uses a state-of-the-art semantic search engine powered by deep <br>AI. It understands context and
-                    meaning to give you research-ready results instantly.</p>
-                <div class="cards">
-                    <div class="row g-3 w-75  mx-auto justify-content-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="workscard">
-                                <img src="./assets/images/ai.png" alt="ai">
-                                <p>AI Semantic Understanding</p>
+    <!-- Current Research section -->
+    <section class="current-research-section section">
+        <div class="container-fluid">
+            <div class="heading-section">
+                <h3>Our Current Research Focus</h3>
+            </div>
+            <div class="research-cards">
+                <div class="slider" id="current-research">
+
+                    <div>
+                        <div class="research-card">
+                            <div class="img-block">
+                                <img src="./assets/images/explore-cubesat-cits-section-middle-block-img.png"
+                                    class="img-fluid" alt="FELUDA CubeSat">
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="workscard">
-                                <img src="./assets/images/thinking.png" alt="thinking">
-                                <p> Fast Knowledge Indexing</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="workscard">
-                                <img src="./assets/images/home-security.png" alt="home-security">
-                                <p>Trained on Space & Defense Data</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="workscard">
-                                <img src="./assets/images/browser.png" alt="browser">
-                                <p> Access to Open + Internal Sources</p>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">FELUDA – CubeSat Mission</h5>
+                                <p class="card-text">Compact satellite for atmospheric studies and imaging.</p>
+                                <a href="#" class="btn btn-danger mt-3">Learn More</a>
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <div class="research-card">
+                            <div class="img-block">
+                                <img src="./assets/images/explore-cubesat-cits-section-middle-block-img.png"
+                                    class="img-fluid" alt="FELUDA CubeSat">
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">FELUDA – CubeSat Mission</h5>
+                                <p class="card-text">Compact satellite for atmospheric studies and imaging.</p>
+                                <a href="#" class="btn btn-danger mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="research-card">
+                            <div class="img-block">
+                                <img src="./assets/images/explore-cubesat-cits-section-middle-block-img.png"
+                                    class="img-fluid" alt="FELUDA CubeSat">
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">FELUDA – CubeSat Mission</h5>
+                                <p class="card-text">Compact satellite for atmospheric studies and imaging.</p>
+                                <a href="#" class="btn btn-danger mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="research-card">
+                            <div class="img-block">
+                                <img src="./assets/images/explore-cubesat-cits-section-middle-block-img.png"
+                                    class="img-fluid" alt="FELUDA CubeSat">
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">FELUDA – CubeSat Mission</h5>
+                                <p class="card-text">Compact satellite for atmospheric studies and imaging.</p>
+                                <a href="#" class="btn btn-danger mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="research-card">
+                            <div class="img-block">
+                                <img src="./assets/images/explore-cubesat-cits-section-middle-block-img.png"
+                                    class="img-fluid" alt="FELUDA CubeSat">
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title">FELUDA – CubeSat Mission</h5>
+                                <p class="card-text">Compact satellite for atmospheric studies and imaging.</p>
+                                <a href="#" class="btn btn-danger mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
     </section>
-    <!-- sidhu search section end -->
+
+
+
+    <!-- Patents section -->
+    <section class="patent-section section">
+        <div class="container-fluid">
+            <div class="heading-section">
+                <h3>Patents & Future Prototypes</h3>
+            </div>
+            <ul class="list-style">
+                <li>
+                    <h2>Sounding Rocket</h2>
+                    <p>Agnirath Aerospace offers a unique opportunity for clients to send payloads using our sounding rocket launch services. We can accommodate payloads of up to 10 kg and deliver them to altitudes of up to 90 km, providing a platform for scientific experiments, technology demonstration, or educational projects.</p>
+                </li>
+                <li>
+                    <h2>Satellite Design</h2>
+                    <p>Our team specializes in designing complete satellites tailored to meet the specific needs of various institutions. Whether for educational purposes, research, or commercial applications, we work closely with clients to ensure that every aspect of the satellite aligns with their objectives.</p>
+                </li>
+                <li>
+                    <h2>Data Collection</h2>
+                    <p>Agnirath Aerospace is dedicated to collecting and delivering real-time data from satellites to our clients. This project involves leveraging advanced satellite technolog er critica l data that can be used for research, monitoring, and decision-making. </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 
 
     <!-- Footer Start -->
@@ -208,8 +280,6 @@
     </footer>
     <!-- Footer End -->
 
-
-
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -218,9 +288,6 @@
 
     <!-- Typed Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-
-    <!-- Matt Boldt type js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Slick-Slider-JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -236,25 +303,6 @@
 
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
-
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['space', 'defense tech', 'AI image generators'],
-            typeSpeed: 60,
-            backSpeed: 30,
-            backDelay: 1200,
-            startDelay: 500,
-            loop: true,
-            loopCount: Infinity,
-            showCursor: true,
-            cursorChar: '|',
-            smartBackspace: true,
-            shuffle: false,
-            fadeOut: true,
-            fadeOutDelay: 500
-        });
-    </script>
 
 </body>
 

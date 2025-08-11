@@ -289,8 +289,15 @@ header .right-login-btn-block .instructor-btn::before {
 }
 
 @keyframes shiny {
-    0%{ left: -100%; opacity: 1; }
-    100%{ left: 100%; opacity: 0; }
+    0% {
+        left: -100%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
 }
 
 
@@ -397,49 +404,6 @@ header .right-login-btn-block .instructor-btn::before {
 
 /* Banner Section End */
 
-/* School Course Section Start */
-.school-course-section {
-    background: #fff;
-    padding: 60px 0;
-    margin: 0;
-}
-
-.school-course-section .img-block {
-    position: sticky;
-    top: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.school-course-section .text-block {
-    padding: 0;
-    margin: 0;
-}
-
-.school-course-section .text-block h2 {
-    font-family: inherit;
-    font-size: 30px;
-    color: var(--black-bgc);
-    line-height: 1.3;
-    font-weight: 700;
-    background-color: #fff;
-    padding: 0;
-    margin: 0 0 20px 0;
-}
-
-.school-course-section .text-block p {
-    font-family: inherit;
-    font-size: 16px;
-    color: var(--black-bgc);
-    line-height: 1.5;
-    font-weight: 400;
-    padding: 0;
-    margin: 0 0 20px 0;
-}
-
-
-/* School Course Section End */
-
 
 /* All Programs Section Start */
 .all-programs-section {
@@ -448,7 +412,7 @@ header .right-login-btn-block .instructor-btn::before {
     background-repeat: no-repeat;
     background-position: 0 top;
     background-size: contain;
-    padding: 50px 0 100px 0;
+    padding: 100px 0;
     position: relative;
 }
 
@@ -779,7 +743,7 @@ header .right-login-btn-block .instructor-btn::before {
 
 /* Explore Cubesat kits Section Start */
 .explore-cubesat-cits-section {
-    padding-bottom: 35px;
+    padding-bottom: 100px;
 }
 
 .explore-cubesat-cits-section .top-img-block {
@@ -919,7 +883,7 @@ header .right-login-btn-block .instructor-btn::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 
 .community-section .top-part .heading-section {
@@ -927,19 +891,40 @@ header .right-login-btn-block .instructor-btn::before {
     margin: 0;
 }
 
+
 .community-section .top-part .heading-section h3 {
     color: var(--white-color);
+    padding-bottom: 20px;
 }
 
-.community-section .top-part .heading-section p {
+.community-section .top-part .heading-section .row [class^="col-lg-"] {
+    background-color: rgb(131, 131, 131, 10%);
+    padding: 30px 35px;
+    border-radius: 20px;
+}
+
+.community-section .top-part .heading-section .lists {
+    display: flex;
+    gap: 20px;
+    padding: 0 0 30px 0;
+    align-items: baseline;
+}
+
+.community-section .top-part .heading-section .lists i {
+    font-size: 12px;
+    color: #fff;
+}
+
+.community-section .top-part .heading-section .lists p {
     font-size: 16px;
     color: var(--white-color);
     font-weight: 400;
     text-align: left;
     line-height: 1.5;
-    padding-bottom: 0;
-    margin: 0 0 20px 0;
+    /* padding-bottom: 20px; */
+    /* margin: 0 0 20px 0; */
 }
+
 
 .community-section .top-part .heading-section span {
     font-family: inherit;
@@ -1460,19 +1445,22 @@ ABOUT PAGE
     PROJECTs PAGE CSS
 */
 
-.space-and-defense-section{
+.space-and-defense-section {
     background-color: var(--black-bgc);
     padding: 70px 0 120px 0;
 }
+
 .space-and-defense-section .heading-section,
-.space-and-defense-section .heading-section p{
+.space-and-defense-section .heading-section p {
     text-align: left;
 }
+
 .space-and-defense-section .heading-section h3,
-.space-and-defense-section .heading-section p{
+.space-and-defense-section .heading-section p {
     color: var(--white-color);
 }
-.space-and-defense-section .card .img-block{
+
+.space-and-defense-section .card .img-block {
     height: 250px;
     display: flex;
     align-items: center;
@@ -1481,13 +1469,14 @@ ABOUT PAGE
     border-radius: 5px;
 }
 
-.timeline-section{
+.timeline-section {
     position: relative;
     background-position: 0 right;
     padding: 70px 0 120px 0;
     z-index: 1;
 }
-.timeline-section::after{
+
+.timeline-section::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1495,17 +1484,20 @@ ABOUT PAGE
     background-image: url('../images/projects-bgc.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 70%;    
+    background-size: 70%;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
-.timeline-section .heading-section{
+
+.timeline-section .heading-section {
     text-align: left;
 }
-.timeline-section .heading-section h3{
+
+.timeline-section .heading-section h3 {
     color: var(--white-color);
 }
+
 .timeline-section .timeline {
     position: relative;
 }
@@ -1528,7 +1520,209 @@ ABOUT PAGE
     background: var(--primary-color);
     border-radius: 50%;
 }
-.team-and-outcomes-section{
+
+.team-and-outcomes-section {
     background-color: var(--white-color);
     padding: 70px 0 120px 0;
 }
+
+
+/* 
+    SCHOOL COURSE PAGE
+*/
+
+/* School Course Section Start */
+.school-course-section {
+    background: #fff;
+    padding: 60px 0;
+    margin: 0;
+}
+
+.school-course-section .img-block {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.school-course-section .text-block {
+    padding: 0;
+    margin: 0;
+}
+
+.school-course-section .text-block h2 {
+    font-family: inherit;
+    font-size: 30px;
+    color: var(--black-bgc);
+    line-height: 1.3;
+    font-weight: 700;
+    background-color: #fff;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.school-course-section .text-block p {
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--black-bgc);
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+
+/* School Course Section End */
+
+
+/* 
+    RESEARCH AND DEVELOPMENT PAGE
+*/
+.section {
+    padding: 75px 0;
+}
+.research-section h3,
+.research-section p{
+    color: var(--white-color);
+}
+.research-section p{
+    padding: 30px 0;
+    max-width: 900px;
+}
+.current-research-section{
+    background-color: #fff
+}
+.current-research-section .research-cards{
+    padding: 50px 0;
+}
+.current-research-section .research-cards .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.current-research-section .research-cards .research-card{
+    border: 1px solid #000;
+    /* height: 500px; */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 20px;
+}
+.current-research-section .research-cards .research-card .img-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.current-research-section .research-cards .research-card .card-body{
+    padding: 20px 0 0 0;
+}
+.patent-section h3{
+    color: var(--white-color);
+}
+.patent-section .list-style{
+    text-align: center;
+    padding-top: 30px;
+}
+.patent-section .list-style li{
+    padding: 18px 0;
+    color: var(--white-color);
+}
+.patent-section .list-style li p{
+    margin: auto;
+    padding: 10px 0;
+    max-width: 900px;
+}
+
+
+
+/* 
+    AGNIRATHX E MAGAZINE PAGE
+*/
+.magazine-section{
+    background-color: #fff;
+}
+.magazine-section .magazine-wrapper .heading-section{
+    padding: 50px 0;
+}
+
+.magazine-section .magazine-wrapper .heading-section h3{
+    color: var(--black-bgc);
+    font-size: clamp(1.875rem, 1.714rem + 0.6689vw, 2.5rem);
+}
+.magazine-section .magazine-wrapper{
+    padding-bottom: 50px;
+}
+.magazine-section .magazine-wrapper .heading-section p{
+    color: var(--black-bgc);
+    padding: 20px 0 0 0;
+}
+.magazine-section .magazine-wrapper .magazines{
+    margin: auto;
+    height: clamp(31.25rem, 28.0309rem + 13.3779vw, 43.75rem);
+    width: clamp(18.75rem, 15.5309rem + 13.3779vw, 31.25rem);
+    background-color: var(--black-bgc);
+    position: relative;
+}
+.magazine-section .magazine-wrapper .magazines .slider,
+.magazine-section .magazine-wrapper .magazines .slider div{
+    height: 100%;
+}
+.magazine-section .magazine-wrapper .magazines .slider button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    color: #111111;
+    position: absolute;
+    top: 50%;
+}
+.magazine-section .magazine-wrapper .magazines .slider .slick-next{
+    right: -80px;
+}
+.magazine-section .magazine-wrapper .magazines .slider .slick-prev{
+    left: -80px;
+}
+.magazine-section .magazine-wrapper .magazines .slider .magazine .img-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* 
+    CONTACT PAGE
+*/
+.contact-section .heading-section h3{
+    color: var(--white-color);
+    padding: 30px 0;
+}
+.contact-section .contact-form{
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Card Style for Papers */
+/* .paper-card {
+    background-color: #151515;
+    border: 1px solid rgba(255, 59, 59, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 59, 59, 0.4);
+} */

@@ -145,4 +145,51 @@ $('#learn-from-slider').slick({
     ]
   });
   
-          
+   //   current-research-section Slider
+  $('#current-research').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 2200,
+    dots: false,
+    arrows: false,
+    infinite: true, // Enables looping
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });    
+  
+  
+  
+  //   current-research-section Slider
+  $('#magazine-wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 2200,
+    dots: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+    infinite: true
+  });  
